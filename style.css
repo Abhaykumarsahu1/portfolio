@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#desktop-nav{
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; 
+    z-index: 1000;
+  
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 10vh;
+    margin-bottom: 10px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav, .nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+.nav-links a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.nav-links{
+    gap: 2em;
+    list-style: none;
+}
+
+.super-nav-links{
+    margin-top: 20px;
+    margin-right: 10vh;
+    margin-bottom: 10px;
+
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+  width: 100%;
+  height: 2px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links{
+  position: absolute;
+  top:100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+ }
+/* image section */
+
+.bio p{
+    margin-top: 10px;
+}
+
+.profile-pic img{
+    box-shadow: 2px 6px 5px 4px rgba(0, 0, 0, 0.1);
+    order: 1;
+    border-radius: 50%;
+    justify-self: center;
+    background-color: rgb(224, 235, 235);
+    height: 300px;
+    width: 300px;
+    animation: floatAnimation 1.5s infinite alternate ease-in-out; 
+    position: relative;
+    bottom: 10vh;
+    /* animation: profile_animate  8s ease-in-out infinite 1s; */
+}
+
+/* @keyframes profile_an+
+imate {
+  0%{
+    border-radius : 90% 40% 90% 70%/60% 30% 40% 70%;
+  }
+  50%{
+    border-radius: 90% 60% 70% 40% /50% 60% 90% 60%;
+  }
+  100%{
+    border-radius : 60% 40% 30% 70%/60% 30% 40% 70%;
+
+  }
+} */
+
+#profile{
+    gap: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.btnContainer{
+    margin-top: 15px;
+}
+.DownloadCV{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 34px;
+    padding: 8px;
+    height: 50px;
+    width: 130px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.DownloadCV:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.Contact_info{
+    margin-left: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 34px;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+}
+
+.Techstack{
+    display: flex;
+    margin-top: 5vh;
+
+}
+
+.Techstack p{
+    margin-left: 44vh;
+    font-size: medium;
+    font-weight: bold;
+}
+.Techstack img{
+    margin-left: 35px;
+}
+.social_img_container{
+  display: flex;justify-content: start;
+  gap: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.social_img_container img{
+    width: 25px;
+    height: 25px;
+}
+
+.social_img_container img:hover{
+  transform: scale(1.1);
+}
+
+.TechstackPic:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 10px); /* adjust the distance the image floats */
+    }
+  }
+
+  /* about me section */
+  #about{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 40vh;
+    margin-left: 40vh;
+  }
+
+  .about_pic{
+    width: 200px;
+    height: 200px;
+    animation: floatAnimation 1.5s infinite alternate ease-in-out; /* adjust animation duration and timing */
+    margin-top: 4vh;
+
+  }
+
+  .TextContainer{
+    margin-left: 20vh;
+  }
+
+  .abt_section_title{
+    font-weight: bolder;
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .abt_section_subtitle{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .abt_section_text{
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  /* Portfolio section */
+
+  /* project 1 section */
+
+  #portfolio{
+    margin-top: 40vh;
+  }
+
+  .project_title, .project_subtitle{
+    margin-left: 40vh;
+  }
+
+  .portfolio_Container{
+    margin-left: 40vh;
+    margin-top: 10vh;
+    }
+
+  .project_title{
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+  } 
+
+  .project_subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .proecjtName1{
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .desc_jotdown{
+    margin-top: 15px;
+  }
+
+  .github_pro1, .github_pro2{
+    margin-top: 20px;
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 8px;
+    /* background-image: url(arrow.png); */
+    width: 18vh;
+    border-radius: 15px;
+  }
+
+  .github_pro1:hover,.github_pro2:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+  }
+
+.project1_container{
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 20px;
+}
+
+
+.img_notes_1{
+    border-radius: 15px;
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 350px;
+    margin-right: 200px;
+    animation: floatAnimation 1.5s infinite alternate ease-in-out;
+    
+
+}
+
+/* project 2 */
+
+.project2{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20vh;
+  margin-left: 40vh;
+}
+
+.project2_pic{
+   border-radius: 15px;
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 350px;
+    margin-top: 4vh;
+    animation: floatAnimation 1.5s infinite alternate ease-in-out;
+
+}
+
+.project2_textholders{
+  margin-top: 10vh;
+  margin-left: 20vh;
+}
+
+.project2_title{
+  font-weight: bolder;
+  color: blue;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project2_text{
+  margin-top: 10px;
+  width: 80%;
+}  
+
+/* contact section */
+#contact{
+margin-top: 30vh;  
+margin-left: 70vh;
+}
+.contact_textholder{
+  margin-left: 20vh;
+}
+
+.get_in_touch{
+  margin-left: 8vh;
+  font-size: 14px;
+  align-self: center;
+}
+
+.contact_me{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* form section */
+
+.Form_section{
+  margin-top: 5px;
+}
+.inp_name, .inp_email{
+  margin-left: 21.6vh;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  width: 30vh;
+  height: 5vh;
+}
+
+
+.inp_msg{
+  margin-left: 15vh;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  width: 50vh;
+  height: 15vh;
+}
+
+.submit_btn{
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 15vh;
+  height: 5.8vh;
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+  margin-left: 30vh;
+}
+
+.submit_btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.contact_img_container{
+  margin-top: 4vh;
+  margin-left: 28vh;
+  display: flex;
+  gap: 1rem;
+}
+footer{
+  margin-top: 10vh;
+  /* margin-bottom: 3vh; */
+}
+
+/* footer section */
+footer p{
+  color: white;
+  padding-top: 10px;
+  padding-left: 30%;
+  padding-bottom: 10px;
+  background-color: black;
+  height: 30px;
+}
